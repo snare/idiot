@@ -20,7 +20,7 @@ setup(
         'packages': ['rumps', 'idiot', 'scruffy', 'psutil', 'biplist', 'emoji'],
     }},
     setup_requires=['py2app'],
-    install_requires=['rumps', 'scruffington', 'psutil', 'biplist', 'emoji'],
+    install_requires=['rumps', 'scruffington>=0.3.3', 'psutil', 'biplist', 'emoji'],
     entry_points={
         'console_scripts': ['idiot=idiot:main']
     },
