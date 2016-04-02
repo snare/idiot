@@ -15,7 +15,7 @@ class VagrantCheck(CheckPlugin):
 
     def run(self):
         try:
-            output = subprocess.check_output(["/usr/local/bin/vagrant", "global-status"]).split('\n')[2:]
+            output = subprocess.check_output(["vagrant global-status"], shell=True).split('\n')[2:]
             running = [line.split()[0] for line in output if "running" in line]
             if len(running):
                 return (False, "VMs are running: {}".format(', '.join(running)))
