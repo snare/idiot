@@ -84,7 +84,11 @@ When testing, you might want to edit your config to enable debug logging, make t
 
 ## FAQ
 
-If you get an error related to the `rumps` module while running, you'll need to install [snare's fork](https://github.com/snare/rumps) of `rumps`. It should be installed automatically by the `setup.py`, but if you already had a version installed it may not have been.
+If you get the following error:
+
+    <type 'exceptions.TypeError'>: notification() got an unexpected keyword argument 'actionButton'
+
+then you probably don't have [snare's fork](https://github.com/snare/rumps) of `rumps` installed. It should be installed automatically by the `setup.py`, but if you already had a version `rumps` installed it may not have been. A PR to integrate the improvements to `rumps` used in Idiot has been issued but not merged yet.
 
 ## License
 
