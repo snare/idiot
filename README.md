@@ -35,6 +35,11 @@ To build the app:
 
 Launch `Idiot.app`.
 
+Alternatively, you can run Idiot from the command line. The only caveat is that you will get a Python icon in the dock.
+
+    $ python setup.py install
+    $ idiot
+
 ### Status Menu
 
 Idiot adds an icon to the OS X status bar. Hopefully this will be a happy face telling you everything is OK. If something goes wrong, the icon changes. The menu underneath the icon reflects the status of the most recent run of checks:
