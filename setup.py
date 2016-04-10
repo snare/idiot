@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="Idiot",
-    version="0.1",
+    version="0.1.1",
     author="snare & y011",
     author_email="snare@ho.ax",
     description=(""),
@@ -17,10 +17,10 @@ setup(
         'plist': {
             'LSUIElement': True,
         },
-        'packages': ['rumps', 'idiot', 'scruffy', 'psutil', 'biplist', 'emoji'],
+        'packages': ['rumps', 'idiot', 'scruffy', 'psutil', 'biplist', 'emoji', 'argh'],
     }},
     setup_requires=['py2app'],
-    install_requires=['rumps', 'scruffington>=0.3.3', 'psutil', 'biplist', 'emoji'],
+    install_requires=['rumps', 'scruffington>=0.3.3', 'psutil', 'biplist', 'emoji', 'argh'],
     entry_points={
         'console_scripts': ['idiot=idiot:main']
     },
