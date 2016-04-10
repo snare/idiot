@@ -20,10 +20,15 @@ Built-in checks:
 * File sharing
 * Screen sharing
 * SSH
+* File watcher
 
 ## Installation
 
 Download the latest binary [here](https://github.com/snare/idiot/releases), unzip the zip file and drag the app to the `/Applications` folder.
+
+Or clone this repo and install the Python package if you want to run it from the command line:
+
+    $ python setup.py install
 
 ## Building
 
@@ -76,6 +81,10 @@ When testing, you might want to edit your config to enable debug logging, make t
     debug_logging:  true
     check_interval: 10
     snooze_intervals: [60, 120, 'forever']
+
+## FAQ
+
+If you get an error related to the `rumps` module while running, you'll need to install [snare's fork](https://github.com/snare/rumps) of `rumps`. It should be installed automatically by the `setup.py`, but if you already had a version installed it may not have been.
 
 ## License
 
