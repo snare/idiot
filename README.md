@@ -49,7 +49,7 @@ Alternatively, you can run Idiot from the command line. The only caveat is that 
 
 Idiot adds an icon to the OS X status bar. Hopefully this will be a happy face telling you everything is OK. If something goes wrong, the icon changes. The menu underneath the icon reflects the status of the most recent run of checks:
 
-![status_menu](http://i.imgur.com/ZwAAfna.png)
+![status_menu](http://i.imgur.com/su5qjfN.png)
 
 ### Notifications
 
