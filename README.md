@@ -21,6 +21,7 @@ Built-in checks:
 * Screen sharing
 * SSH
 * File watcher
+* Directory size warnings
 
 ## Installation
 
