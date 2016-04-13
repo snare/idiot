@@ -13,7 +13,7 @@ class FirewallCheck(CheckPlugin):
     def run(self):
         try:
             d = biplist.readPlist('/Library/Preferences/com.apple.alf.plist')
-            enabled = (d['globalstate'] == 1)
+            enabled = (d['globalstate'] >= 1)
         except:
             return (False, "failed to read firewall config plist")
 
